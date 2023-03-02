@@ -4,15 +4,119 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 main {
-  max-width: 1440px;  
+  max-width: 1440px;
   height: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
+}
+
+
+.ingredient-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: .15rem;
+}
+
+.ingredient-item {
+  animation: fadeIn .3s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.ingredient-bread {
+  width: 200px;
+  height: 20px;
+  background-color: bisque;
+  border-radius: 4rem;
+}
+
+.ingredient-tomato {
+  width: 230px;
+  height: 8px;
+  background-color: crimson;
+  border-radius: 50%;
+}
+
+.ingredient-lettuce {
+  width: 230px;
+  height: 8px;
+  background-color: mediumspringgreen;
+  border-radius: 50%;
+}
+
+.ingredient-cheese {
+  width: 230px;
+  height: 8px;
+  background-color: gold;
+  border-radius: 20%;
+}
+
+.ingredient-meat {
+  width: 230px;
+  height: 8px;
+  background-color: chocolate;
+  border-radius: 20%;
+}
+
+
+
+.sc-ingridient-buttons {
+  margin-top: 4rem;
+  display: flex;
+  gap: .5rem;
+}
+
+.sc-ingridient-buttons .btn {
+  padding: .5rem 1rem;
+  background-color: #4388d6;
+  color: white;
+  border: 1px solid #4388d6;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.sc-ingridient-buttons .btn:hover {
+  opacity: .8;
+}
+
+
+.sc-summary {
+  border: 1px solid gray;
+  padding: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.sc-summary .sc-summary-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.sc-summary .sc-summary-item p {
+  margin: .25rem 0;
+}
+
+.sc-summary .sc-summary-total {}
+
+
+.navbar-nav .active .nav-item a{
+    color: red;  
 }
